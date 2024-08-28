@@ -1,0 +1,7 @@
+DELETE FROM books
+  WHERE "id" = 2
+RETURNING *;
+
+DELETE FROM authors
+  WHERE "id" IN (2, 3)
+RETURNING *;
